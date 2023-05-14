@@ -1,7 +1,11 @@
 img {
-  border: 5px dotted yellow;
+  border: 8px dashed black;
 }
 
 body {
-  background-color: chartreuse;
+  background-color: burlywood;
+}
+
+.owner {
+  border: solid 5px black;
 }
