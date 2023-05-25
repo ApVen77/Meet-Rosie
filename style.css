@@ -1,3 +1,9 @@
+* {
+  cursor: pointer;
+  font-family: "Amatic SC", cursive;
+  font-size: 24px;
+}
+
 img {
   border: 4px dashed black;
 }
@@ -8,4 +14,31 @@ body {
 
 .owner {
   border: solid 1px chartreuse;
+}
+
+#about h1 {
+  color: rgb(181, 250, 112);
+  font-size: 45px;
+  text-align: center;
+}
+
+.w3-image {
+  height: 100px;
+  width: 90px;
+  text-align: center;
+}
+
+#answerOne {
+  font-size: larger;
+  color: green;
+  font-weight: bolder;
+}
+
+.rab {
+  float: right;
+}
+
+.rab:hover,
+h1:hover {
+  font-size: 40px;
 }

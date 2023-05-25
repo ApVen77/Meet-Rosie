@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 
 <body>
@@ -14,19 +18,24 @@
         <a href="#about" class="w3-bar-item w3-button">About</a>
         <a href="#members" class="w3-bar-item w3-button">Members</a>
         <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <div class="rab">🐇</div>
     </div>
     <!-- Start Content -->
     <div id="home" class="w3-content">
         <!-- About -->
         <div id="about" class="w3-container w3-padding-32">
-            <h1 class="w3-center">Rosie Posie</h1>
-            <p>This is our band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h1><u><strong>Rosie Posie</strong></u></h1>
+            <p>Meet Rosey, the enchanting bundle of joy hopping her way into your heart. With her soft, velvety fur as
+                white as freshly fallen snow and eyes sparkling like gemstones, Rosey is a captivating pet rabbit that
+                captivates everyone she meets. Her petite size and dainty demeanor give her an air of elegance, but
+                don't be fooled by her delicate appearance; Rosey is a playful and mischievous companion who loves
+                exploring her surroundings and engaging in delightful antics. Her infectious enthusiasm and gentle
+                nature make her the perfect addition to any family, bringing endless love and happiness into their
+                lives. Get ready to be enchanted by Rosey's irresistible charm and boundless affection.</p>
         </div>
 
         <!-- Image -->
-        <img src="images/IMG_4473.jpeg" alt="The Band" style="width:100%">
+        <img src="images/IMG_4473.jpeg" alt="The Band" style="width:100%" class="animate__animated animate__wobble">
 
         <!-- Members -->
         <div id="members" class="w3-container w3-padding-32">
@@ -86,13 +95,13 @@
             </div>
         </div>
         <!-- Slides -->
-        <img class="slides" src="images/IMG_3690.jpeg" width="100%">
-        <img class="slides" src="images/IMG_4093.jpeg" width="100%">
-        <img class="slides" src="images/IMG_4140.jpeg" width="100%">
-        <img class="slides" src="images/IMG_2634.jpg" width="100%">
-        <img class="slides" src="images/IMG_2599.jpg" width="100%">
-        <img class="slides" src="images/IMG_2368.jpg" width="100%">
-        <img class="slides" src="images/IMG_2641.jpg" width="100%">
+        <img class="slides" src="images/IMG_3690.jpeg" width="100%" height="50%">
+        <img class="slides" src="images/IMG_4093.jpeg" width="100%" height="50%">
+        <img class="slides" src="images/IMG_4140.jpeg" width="100%" height="50%">
+        <img class="slides" src="images/IMG_2634.jpg" width="100%" height="50%">
+        <img class="slides" src="images/IMG_2599.jpg" width="100%" height="50%">
+        <img class="slides" src="images/IMG_2368.jpg" width="100%" height="50%">
+        <img class="slides" src="images/IMG_2641.jpg" width="100%" height="50%">
         <script>
             w3.slideshow(".slides", 1500);
         </script>
@@ -105,7 +114,7 @@
             <div id="contact" class="w3-container w3-center w3-padding-32">
 
                 <h2 class="w3-wide">Join Our Email List</h2>
-                Chicago, US<br>
+                Colorado, US<br>
                 Phone: +00 151515<br>
                 Email: mail@mail.com<br>
                 <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
@@ -117,7 +126,7 @@
                     <button class="w3-button w3-black" type="submit">SEND</button>
                 </form>
                 <br>
-                <img src="images/IMG_2641.jpg" class="w3-image" style="width:100%">
+                <img src="images/IMG_2641.jpg" class="w3-image">
                 <p class="w3-center w3-padding">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
                         title="W3.CSS" target="_blank">w3.css</a></p>
             </div>
@@ -134,6 +143,30 @@
             <!-- End Content -->
         </div>
 
+        <div id="members" class="w3-container w3-padding-32">
+            <div class="w3-row w3-center">
+
+                <div class="w3-third">
+
+                    <p>Do Rabbits eat Meat?</p>
+                    <button type="button" onclick="answer()">See Answer</button>
+                    <p id="answer">Do Sleep during the Day or Night?</p>
+                    <button type="button" onclick="answerYes()">See Answer</button>
+                    <p id="answer1">Can rabbits be dangerous?</p>
+                    <button type="button" onclick="answer()">See Answer</button>
+                    <p id="answer2">Are rabbits predetors or prey</p>
+                    <button type="button" onclick="answer()">See Answer</button>
+                    <p id="answer3">DO you know how many breed of rabbits there are?</p>
+
+                    <button type="button" onclick="answerYes()">See Answer</button>
+                    <p id="answer4">DO you know how many breed of rabbits there are?</p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
 </body>
 
 </html>
